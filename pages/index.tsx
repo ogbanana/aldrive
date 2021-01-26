@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/Nav'
+import WelcomeText from '../components/WelcomeText'
 
 const index = () => {
   return (
@@ -14,6 +15,7 @@ const index = () => {
       <div className="mainContainer justify-end">
         <Nav />
       </div>
+      <WelcomeText />
     </>
   )
 }
