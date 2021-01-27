@@ -2,9 +2,9 @@ import React from 'react'
 
 const WelcomeText = () => {
   return (
-    <div>
-      <h1>Welcome to my portfolio! Stay as long as you like. </h1>
-    </div>
+    // <div className="pt-10 pl-5">
+      <h1 className="line-1 anim-typewriter">Welcome to my portfolio! Stay as long as you like.</h1>
+    // </div>
   )
 }
 

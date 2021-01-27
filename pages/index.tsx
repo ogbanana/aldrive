@@ -12,8 +12,9 @@ const index = () => {
       <div className="backgroundImage">
         <img src="../images/background.jpg" />
       </div>
-      <div className="mainContainer justify-end">
+      <div className="mainContainer flex flex-col">
         <Nav />
+        <WelcomeText />
       </div>
       <WelcomeText />
     </>

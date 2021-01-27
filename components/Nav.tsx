@@ -4,18 +4,18 @@ import Link from 'next/link'
 const Nav = () => {
   return (
     <>
-      <ul className="flex flex-row w-1/3 justify-around mr-2 mt-1 h-7">
-        <li>
+      <ul className="flex flex-row justify-end w-full mr-2 mt-1 h-7">
+        <li className="navItem">
           <Link href="/">
             <a>Home</a>
           </Link>
         </li>
-        <li>
+        <li className="navItem">
           <Link href="/about">
             <a>About Me</a>
           </Link>
         </li>
-        <li>
+        <li className="navItem">
           <Link href="/projects">
             <a>Projects</a>
           </Link>
