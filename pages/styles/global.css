@@ -7,7 +7,7 @@
 }
 
 .backgroundImage {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: -1;
@@ -17,60 +17,30 @@
   height: 100vh;
   width: 98vw;
   border: 2px solid rgb(255, 245, 187);
-  border-radius: 10px;
+  border-radius: 1em 1em 0 0;
+  border-bottom: none;
   background-color: rgba(26, 24, 11, 0.8);
   z-index: 1;
   display: flex;
   margin-top: 1%;
   margin-left: 1%;
+  position: fixed;
+  top: 0;
+  overflow: auto;
 }
 
 .navItem {
-  @apply p-2;
+  @apply pr-5 pl-5 pt-3;
 }
 
-html {
-  min-height: 100%;
-  overflow: hidden;
+.projectImage {
+  @apply rounded-xl opacity-50;
 }
 
-body {
-  height: calc(100vh - 8em);
-  padding: 4em;
-  color: rgba(255, 255, 255);
-  background-color: rgb(25, 25, 25);
-}
-
-.line-1 {
+.footer {
+  z-index: 1;
   position: relative;
-  top: 50%;
-  width: 24em;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255,255,255,.75);
-  font-size: 180%;
+  bottom: 0;
   text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);
-}
-
-/* Animation */
-.anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both blinkTextCursor 500ms steps(44) infinite;
-}
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 24em;
-  }
-}
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255);
-  }
-  to {
-    border-right-color: transparent;
-  }
+  padding-top: 7em;
 }

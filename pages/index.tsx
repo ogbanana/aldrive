@@ -2,6 +2,9 @@ import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/Nav'
 import WelcomeText from '../components/WelcomeText'
+import Introduction from '../components/Introduction'
+import Projects from '../components/Projects'
+import Footer from '../components/Footer'
 
 const index = () => {
   return (
@@ -15,8 +18,10 @@ const index = () => {
       <div className="mainContainer flex flex-col">
         <Nav />
         <WelcomeText />
+        <Introduction />
+        <Projects />
+        <Footer />
       </div>
-      <WelcomeText />
     </>
   )
 }
