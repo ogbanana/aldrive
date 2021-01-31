@@ -11,6 +11,12 @@ const index = () => {
     <>
       <Head>
         <title>Amy Liao</title>
+        <link rel="icon" type="images/png" href="/images/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <div className="backgroundImage">
         <img src="../images/background.jpg" />

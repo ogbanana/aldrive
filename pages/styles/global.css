@@ -4,6 +4,7 @@
 
 * {
   color: rgb(255, 245, 187);
+  font-family: 'Spartan', sans-serif;
 }
 
 .backgroundImage {
@@ -19,7 +20,7 @@
   border: 2px solid rgb(255, 245, 187);
   border-radius: 1em 1em 0 0;
   border-bottom: none;
-  background-color: rgba(26, 24, 11, 0.8);
+  background-color: rgba(22, 9, 20, 0.85);
   z-index: 1;
   display: flex;
   margin-top: 1%;
@@ -30,17 +31,5 @@
 }
 
 .navItem {
-  @apply pr-5 pl-5 pt-3;
-}
-
-.projectImage {
-  @apply rounded-xl opacity-50;
-}
-
-.footer {
-  z-index: 1;
-  position: relative;
-  bottom: 0;
-  text-align: center;
-  padding-top: 7em;
+  @apply pr-5 pl-5 pt-3 h-20;
 }

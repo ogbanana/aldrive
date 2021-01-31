@@ -2,16 +2,28 @@
   {
     "projectName": "MealDotMatch",
     "image": "../images/mealdotmatch.png",
-    "url": "http://www.mealdotmatch.com/"
+    "url": "http://www.mealdotmatch.com/",
+    "description": "Mealdotmatch was the final project that my team and I built during bootcamp. This application was build to help people save food while we practice technologies that we learned in class.",
+    "myContributions": "We all took turns working on the entire stack.",
+    "stack": "JS, GraphQL, Twillio, Express, React, React-Bootstrap, Heroku",
+    "code": "https://github.com/meal-dot-match/mealdotmatch"
   },
   {
     "projectName": "WonderStruckTV",
     "image": "../images/wonderstruck.png",
-    "url": "https://www.wonderstrucktv.com/"
+    "url": "https://www.wonderstrucktv.com/",
+    "description": "WonderstruckTV is a project built for BBC America. This is a platform that shows shortform videos of animals, nature, and other natural phenomenon. Studies have shown that watching nature content improves our emotional wellbeing.",
+    "myContributions": "I coded the functionality and designs for the frontend of this application. I also made part of this application content manageable for editors.",
+    "stack": "IP of AMC Networks",
+    "code": "Private"
   },
   {
     "projectName": "BroadenMedia",
     "image": "../images/broadenmedia.png",
-    "url": "https://broadenmedia.vercel.app/"
+    "url": "https://broadenmedia.vercel.app/",
+    "description": "BroadenMEdia is an application that calculates the political percentage of someone based on the media that they consume.",
+    "myContributions": "I coded the design of the website using SASS.",
+    "stack": "IP of Joshua Melo",
+    "code": "https://broadenmedia.vercel.app/"
   }
 ]

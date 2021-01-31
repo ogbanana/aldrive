@@ -3,7 +3,9 @@ import React from 'react'
 const Footer = () => {
   const date = new Date()
   return (
-    <div className="footer h-60 flex flex-col justify-center">© {date.getFullYear()} Amy Liao</div>
+    <div className="footer flex flex-col justify-center items-center w- full h-20 p-5 m-5">
+      © {date.getFullYear()} Amy Liao
+    </div>
   )
 }
 
