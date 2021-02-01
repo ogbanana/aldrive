@@ -12,7 +12,19 @@ module.exports = {
       xl: { min: '1280px', max: '1535px' },
       '2xl': { min: '1536px' },
     },
-    extend: {},
+    extend: {
+      animation: {
+        fadeIn: 'fadeIn 1s ease-in forwards',
+      },
+      keyframes: {
+        fadeIn: {
+          '50%': { opacity: 0.5 },
+          '100%': { opacity: 1 },
+        },
+      },
+    },
   },
-  variants: {},
+  variants: {
+    animation: ['motion-safe'],
+  },
 }
