@@ -2,9 +2,8 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   darkMode: 'media',
-  // https://tailwindcss.com/docs/controlling-file-size#removing-unused-css
-  purge: [],
-  plugins: [require('@tailwindcss/typography')],
+  purge: ['./pages/*.tsx', './components/*.tsx'],
+  plugins: [],
   theme: {
     screens: {
       sm: { min: '200px', max: '1400px' },
