@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   darkMode: 'media',
   // https://tailwindcss.com/docs/controlling-file-size#removing-unused-css
-  purge: ['./src/**/*.tsx'],
+  purge: [],
   plugins: [require('@tailwindcss/typography')],
   theme: {
     screens: {
@@ -13,11 +13,7 @@ module.exports = {
       xl: { min: '1280px', max: '1535px' },
       '2xl': { min: '1536px' },
     },
-    extend: {
-      fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-      },
-    },
+    extend: {},
   },
   variants: {},
 }
