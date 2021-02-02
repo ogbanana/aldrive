@@ -3,31 +3,16 @@
 @tailwind utilities;
 
 * {
-  color: rgb(243, 239, 203);
+  color: rgb(203, 240, 243);
   font-family: 'Spartan', sans-serif;
 }
 
 .backgroundImage {
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: 100vh;
-  width: auto;
+  @apply z-0 fixed top-0 left-0 h-full w-auto bg-contain md:bg-cover;
 }
 
 .mainContainer {
-  height: 100vh;
-  width: 100vw;
-  border: 2px solid rgba(247, 243, 197, 0.25);
-  border-radius: 1em 1em 0 0;
-  border-bottom: none;
-  background-color: rgba(15, 14, 14, 0.95);
-  z-index: 1;
-  display: flex;
-  position: fixed;
-  top: 0;
-  overflow: auto;
+  @apply h-full w-full border-4 border-blue-300 border-opacity-20 rounded-xl border-b-0 bg-black bg-opacity-90 z-10 flex fixed top-0 overflow-auto;
 }
 
 .navItem {
@@ -35,15 +20,43 @@
 }
 
 .singleProject {
-  background-color: rgb(31, 36, 48);
+  @apply bg-gray-900;
 }
 
 h1,
 h2,
 h3 {
-  font-weight: bold;
+  @apply font-bold;
 }
 
 label {
   @apply text-xl font-bold;
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  border-right: 0.1em solid rgb(87, 108, 151);
+  white-space: nowrap;
+  margin: 0 auto;
+  text-spacing: 0.1em;
+  animation: typing 2.5s steps(25, end), blink-caret 0.85s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    @apply w-0;
+  }
+  to {
+    @apply w-full;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    @apply border-transparent;
+  }
+  50% {
+    @apply border-blue-300 border-opacity-30;
+  }
 }

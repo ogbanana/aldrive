@@ -22,7 +22,7 @@ const Projects = () => {
         } else if (Math.abs(mainContainer.scrollTop - position.top) > 180) {
           currProject.setAttribute(
             'class',
-            'grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-70',
+            'grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-50',
           )
         }
       }
@@ -56,15 +56,15 @@ const Projects = () => {
                 {!project.code ? (
                   <p>Private</p>
                 ) : (
-                  <a href={project.code}>
+                  <a href={project.code} target="_blank">
                     <img src="../images/Octocat.png" className="h-10" />
                   </a>
                 )}
               </span>
             </div>
-            <div className="flex justify-center items-center col-start-3 col-end-6">
+            <div className="flex justify-center items-center col-start-3 col-end-6 overflow-hidden rounded-xl border-4 border-blue-300 border-opacity-0 hover:border-opacity-70">
               <a href={project.url} target="_blank">
-                <img className="rounded-xl" src={project.image} />
+                <img className="items-center hover:bg-opacity-100" src={project.image} />
               </a>
             </div>
           </div>
