@@ -20,7 +20,7 @@
   border: 2px solid rgb(255, 245, 187);
   border-radius: 1em 1em 0 0;
   border-bottom: none;
-  background-color: rgba(14, 8, 13, 0.85);
+  background-color: rgba(10, 10, 10, 0.9);
   z-index: 1;
   display: flex;
   margin-top: 1%;
@@ -31,5 +31,5 @@
 }
 
 .navItem {
-  @apply pr-5 pl-5 pt-3 opacity-60 hover:opacity-90;
+  @apply pr-5 pl-5 pt-3 opacity-60 hover:opacity-100;
 }

@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Nav = () => {
   return (
     <>
-      <ul className="flex flex-row justify-end w-full h-18 text-2xl pt-2 pr-2">
+      <ul className="flex flex-row justify-end w-full h-20 text-2xl pt-2 pr-2 flex-shrink-1">
         <li className="navItem">
           <a title="Email" href="mailTo:amy.g.liao@gmail.com" target="_blank">
             <img src="../images/email.png" className="h-11" />

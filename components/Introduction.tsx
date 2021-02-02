@@ -2,7 +2,7 @@ import React from 'react'
 
 const Introduction = () => {
   return (
-    <div className="m-10">
+    <div className="pl-16 pb-10">
       <h1>Amy Liao</h1>
       <ul>
         <li>Full Stack Developer</li>
