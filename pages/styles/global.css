@@ -19,10 +19,6 @@
   @apply pr-5 pl-5 pt-3 opacity-60 hover:opacity-100 transform hover:scale-125;
 }
 
-.singleProject {
-  @apply bg-gray-900;
-}
-
 h1,
 h2,
 h3 {

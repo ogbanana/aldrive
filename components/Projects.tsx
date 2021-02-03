@@ -3,32 +3,52 @@ import projects from '../utils/projects.json'
 
 const Projects = () => {
   useEffect(() => {
-    const mainContainer = document.getElementsByClassName('mainContainer')[0]
+    const mainContainer = document.querySelector('.mainContainer')
     const elements = document.getElementsByClassName('project')
+    let bounds = {}
 
     Object.keys(elements).map((projectID) => {
       const currProject = document.getElementById(projectID)
-      currProject.setAttribute(
-        'class',
-        'grid grid-flow-row grid-cols-5 grid-rows-1 gap-4 p-5 opacity-50',
-      )
       const position = currProject.getBoundingClientRect()
-      function glowing() {
-        if (Math.abs(mainContainer.scrollTop - position.top) < 400) {
-          currProject.setAttribute(
-            'class',
-            'grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-100',
-          )
-        } else if (Math.abs(mainContainer.scrollTop - position.top) > 180) {
-          currProject.setAttribute(
-            'class',
-            'grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-50',
-          )
-        }
-      }
-
-      window.addEventListener('scroll', glowing, true)
+      return (bounds[projectID] = {
+        top: position.top,
+        bottom: position.bottom,
+      })
     })
+
+    window.addEventListener(
+      'scroll',
+      () => {
+        let scrollNum = mainContainer.scrollTop
+        let windowHeight = window.innerHeight
+        Object.keys(bounds).forEach((i) => {
+          if (
+            scrollNum > bounds[i].top - Math.round(windowHeight / 2) &&
+            scrollNum < bounds[i].bottom - Math.round(windowHeight / 3)
+          ) {
+            document
+              .getElementById(i)
+              .setAttribute(
+                'class',
+                'grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-100',
+              )
+          } else {
+            document
+              .getElementById(i)
+              .setAttribute(
+                'class',
+                'grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-50',
+              )
+          }
+        })
+      },
+      true,
+    )
+
+    return () =>
+      window.removeEventListener('scroll', () => {
+        return false
+      })
   })
 
   return (
@@ -36,8 +56,12 @@ const Projects = () => {
       <h2 className="flex items-center text-3xl pl-10 pt-5 pb-5">My Projects</h2>
       {projects.map((project, index) => {
         return (
-          <div id={index.toString()} key={Math.random()} className="project">
-            <div className="singleProject flex flex-col p-5 text-right justify-evenly rounded-xl col-start-1 col-end-3 items-end">
+          <div
+            id={index.toString()}
+            key={Math.random()}
+            className="project grid grid-flow-row grid-cols-5 grid-rows-1 gap-4 p-5 opacity-50"
+          >
+            <div className="bg-gray-900 flex flex-col p-5 text-right justify-evenly rounded-xl col-start-1 col-end-3 items-end">
               <h3 className="text-2xl">{project.projectName}</h3>
               <span>
                 <label>Description</label>
