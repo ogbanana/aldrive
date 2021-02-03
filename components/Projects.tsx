@@ -23,8 +23,8 @@ const Projects = () => {
         let windowHeight = window.innerHeight
         Object.keys(bounds).forEach((i) => {
           if (
-            scrollNum > bounds[i].top - Math.round(windowHeight / 2) &&
-            scrollNum < bounds[i].bottom - Math.round(windowHeight / 3)
+            scrollNum + Math.round(windowHeight / 1.5) > bounds[i].top &&
+            scrollNum + Math.round(windowHeight / 4) < bounds[i].bottom
           ) {
             document
               .getElementById(i)
