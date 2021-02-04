@@ -72,7 +72,15 @@ const Projects = () => {
               </span>
               <span>
                 <label>Tech Stack</label>
-                <p>{project.stack}</p>
+                <p>
+                  {!project.teamMate ? (
+                    project.stack
+                  ) : (
+                    <a href={project.teamMate} target="_blank">
+                      {project.stack}
+                    </a>
+                  )}
+                </p>
               </span>
               <span>
                 <label>Code</label>

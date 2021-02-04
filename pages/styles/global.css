@@ -29,6 +29,10 @@ p {
   @apply mt-2 mb-6;
 }
 
+a {
+  @apply hover:underline;
+}
+
 .typewriter h1 {
   overflow: hidden;
   border-right: 0.1em solid rgb(87, 108, 151);
