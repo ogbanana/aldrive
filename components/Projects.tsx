@@ -16,39 +16,34 @@ const Projects = () => {
       })
     })
 
-    window.addEventListener(
-      'scroll',
-      () => {
-        let scrollNum = mainContainer.scrollTop
-        let windowHeight = window.innerHeight
-        Object.keys(bounds).forEach((i) => {
-          if (
-            scrollNum + Math.round(windowHeight / 1.5) > bounds[i].top &&
-            scrollNum + Math.round(windowHeight / 4) < bounds[i].bottom
-          ) {
-            document
-              .getElementById(i)
-              .setAttribute(
-                'class',
-                'grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-100',
-              )
-          } else {
-            document
-              .getElementById(i)
-              .setAttribute(
-                'class',
-                'grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-50',
-              )
-          }
-        })
-      },
-      true,
-    )
-
-    return () =>
-      window.removeEventListener('scroll', () => {
-        return false
+    function spotlight() {
+      let scrollNum = Math.round(mainContainer.scrollTop)
+      let windowHeight = Math.round(window.innerHeight)
+      Object.keys(bounds).forEach((i) => {
+        if (
+          bounds[i].top <= scrollNum + windowHeight / 2 &&
+          bounds[i].bottom >= scrollNum + windowHeight / 2
+        ) {
+          document
+            .getElementById(i)
+            .setAttribute(
+              'class',
+              'grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-100',
+            )
+        } else {
+          document
+            .getElementById(i)
+            .setAttribute(
+              'class',
+              'grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-50',
+            )
+        }
       })
+    }
+
+    window.addEventListener('scroll', spotlight, true)
+
+    return () => window.removeEventListener('scroll', spotlight)
   })
 
   return (
@@ -58,7 +53,7 @@ const Projects = () => {
         return (
           <div
             id={index.toString()}
-            key={Math.random()}
+            key={index}
             className="project grid grid-flow-row grid-cols-5 grid-rows-1 gap-4 p-5 opacity-50"
           >
             <div className="bg-gray-900 flex flex-col p-5 text-right justify-evenly rounded-xl col-start-1 col-end-3 items-end">
