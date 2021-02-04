@@ -21,21 +21,21 @@ const Projects = () => {
       let windowHeight = Math.round(window.innerHeight)
       Object.keys(bounds).forEach((i) => {
         if (
-          bounds[i].top <= scrollNum + windowHeight / 2 &&
-          bounds[i].bottom >= scrollNum + windowHeight / 2
+          bounds[i].top <= scrollNum + windowHeight / 1.5 &&
+          bounds[i].bottom >= scrollNum + windowHeight / 3
         ) {
           document
             .getElementById(i)
             .setAttribute(
               'class',
-              'grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-100',
+              'lg:grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-100',
             )
         } else {
           document
             .getElementById(i)
             .setAttribute(
               'class',
-              'grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-50',
+              'lg:grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-50',
             )
         }
       })
@@ -48,16 +48,20 @@ const Projects = () => {
 
   return (
     <>
-      <h2 className="flex items-center text-3xl pl-10 pt-5 pb-5">My Projects</h2>
+      <h2 className="flex w-full flex-col lg:flex-row items-center text-2xl lg:text-3xl pl-4 lg:pl-10 lg:pt-4 pb-14">
+        My Projects
+      </h2>
       {projects.map((project, index) => {
         return (
           <div
             id={index.toString()}
             key={index}
-            className="project grid grid-flow-row grid-cols-5 grid-rows-1 gap-4 p-5 opacity-50"
+            className="project lg:grid grid-flow-row lg:grid-cols-5 lg:grid-rows-1 lg:gap-4 p-5 opacity-50"
           >
-            <div className="bg-gray-900 flex flex-col p-5 text-right justify-evenly rounded-xl col-start-1 col-end-3 items-end">
-              <h3 className="text-2xl">{project.projectName}</h3>
+            <div className="bg-gray-900 flex flex-col p-5 lg:text-right justify-around rounded-xl col-start-1 col-end-3 lg:items-end mb-5">
+              <a href={project.url} target="_blank">
+                <h3 className="text-2xl lg:text-xl mb-4 pt-2">{project.projectName}</h3>
+              </a>
               <span>
                 <label>Description</label>
                 <p>{project.description}</p>
@@ -81,7 +85,7 @@ const Projects = () => {
                 )}
               </span>
             </div>
-            <div className="flex justify-center items-center col-start-3 col-end-6 overflow-hidden rounded-xl border-4 border-blue-300 border-opacity-0 hover:border-opacity-70">
+            <div className="flex justify-center items-center col-start-3 col-end-6 overflow-hidden rounded-xl border-2 border-blue-300 border-opacity-0 hover:border-opacity-70 mb-5">
               <a href={project.url} target="_blank">
                 <img className="items-center hover:bg-opacity-100" src={project.image} />
               </a>

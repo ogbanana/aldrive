@@ -1,10 +1,16 @@
 import React from 'react'
+import Nav from './Nav'
 
 const Footer = () => {
   const date = new Date()
   return (
-    <div className="footer flex flex-col justify-center items-center w-full h-20 pb-10 pt-10">
-      © {date.getFullYear()} Amy Liao
+    <div className="w-full relative text-lg pt-20 pb-32">
+      <div className="flex justify-center items-center">
+        © {date.getFullYear()}
+        <a href="https://www.linkedin.com/in/amyliao123/" target="_blank">
+          &nbsp; Amy Liao
+        </a>
+      </div>
     </div>
   )
 }

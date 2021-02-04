@@ -18,15 +18,14 @@ const index = () => {
           rel="stylesheet"
         />
       </Head>
-      <div className="backgroundImage">
-        <img src="../images/background.jpg" />
-      </div>
-      <div className="mainContainer flex flex-col">
-        <Nav />
-        <WelcomeText />
-        <Introduction />
-        <Projects />
-        <Footer />
+      <div className="bg-background bg-contain">
+        <div className="mainContainer">
+          <Nav />
+          <WelcomeText />
+          <Introduction />
+          <Projects />
+          <Footer />
+        </div>
       </div>
     </>
   )
