@@ -3,47 +3,49 @@ import projects from '../utils/projects.json'
 
 const Projects = () => {
   useEffect(() => {
-    const mainContainer = document.querySelector('.mainContainer')
-    const elements = document.getElementsByClassName('project')
-    let bounds = {}
+    if (window.innerWidth >= 1024) {
+      const mainContainer = document.querySelector('.mainContainer')
+      const elements = document.getElementsByClassName('project')
+      let bounds = {}
 
-    Object.keys(elements).map((projectID) => {
-      const currProject = document.getElementById(projectID)
-      const position = currProject.getBoundingClientRect()
-      return (bounds[projectID] = {
-        top: position.top,
-        bottom: position.bottom,
+      Object.keys(elements).map((projectID) => {
+        const currProject = document.getElementById(projectID)
+        const position = currProject.getBoundingClientRect()
+        return (bounds[projectID] = {
+          top: position.top,
+          bottom: position.bottom,
+        })
       })
-    })
 
-    function spotlight() {
-      let scrollNum = Math.round(mainContainer.scrollTop)
-      let windowHeight = Math.round(window.innerHeight)
-      Object.keys(bounds).forEach((i) => {
-        if (
-          bounds[i].top <= scrollNum + windowHeight &&
-          bounds[i].bottom >= scrollNum + windowHeight / 4
-        ) {
-          document
-            .getElementById(i)
-            .setAttribute(
-              'class',
-              'lg:grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-100',
-            )
-        } else {
-          document
-            .getElementById(i)
-            .setAttribute(
-              'class',
-              'lg:grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-50',
-            )
-        }
-      })
+      const spotlight = () => {
+        let scrollNum = Math.round(mainContainer.scrollTop)
+        let windowHeight = Math.round(window.innerHeight)
+        Object.keys(bounds).forEach((i) => {
+          if (
+            bounds[i].top <= scrollNum + windowHeight &&
+            bounds[i].bottom >= scrollNum + windowHeight / 4
+          ) {
+            document
+              .getElementById(i)
+              .setAttribute(
+                'class',
+                'lg:grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-100',
+              )
+          } else {
+            document
+              .getElementById(i)
+              .setAttribute(
+                'class',
+                'lg:grid grid-flow-row grid-cols-5 grid-rows-1 gap-5 p-5 opacity-50',
+              )
+          }
+        })
+      }
+
+      window.addEventListener('scroll', spotlight, true)
+
+      return () => window.removeEventListener('scroll', spotlight)
     }
-
-    window.addEventListener('scroll', spotlight, true)
-
-    return () => window.removeEventListener('scroll', spotlight)
   })
 
   return (
@@ -56,7 +58,7 @@ const Projects = () => {
           <div
             id={index.toString()}
             key={index}
-            className="project lg:grid grid-flow-row lg:grid-cols-5 lg:grid-rows-1 lg:gap-4 p-5 opacity-50"
+            className="project lg:grid grid-flow-row lg:grid-cols-5 lg:grid-rows-1 lg:gap-4 p-5 lg:opacity-50"
           >
             <div className="bg-gray-900 flex flex-col p-5 lg:text-right justify-around rounded-xl col-start-1 col-end-3 lg:items-end mb-5">
               <a href={project.url} target="_blank">
