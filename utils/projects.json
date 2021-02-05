@@ -26,5 +26,14 @@
     "stack": "IP of Joshua Melo",
     "teamMate": "https://www.linkedin.com/in/joshuamelo1",
     "code": "https://github.com/mallockey/broadenmedia"
+  },
+  {
+    "projectName": "Advertisements on AMC",
+    "image": "../images/amcAds.png",
+    "url": "https://www.amc.com/",
+    "description": "Implemented a single solution that allowed business teams to incorporate advertisements on all major AMC Network's websites in an ongoing basis. The websites were for the following channels: AMC, BBC America, WETV, SundanceTV, and IFC. The solution needed to be dynamic and iterable.",
+    "myContributions": "This project had a tight timeline. I was given the opportunity to lead, plan, and delegate the tasks. I worked with one other engineer. The project was delivered on time, with no major bugs. An iteration is in the works.",
+    "stack": "IP of AMC Networks",
+    "code": "Private"
   }
 ]

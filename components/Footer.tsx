@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <div className="w-full relative text-lg pt-20 pb-32">
       <div className="flex justify-center items-center">
-        © {date.getFullYear()}
+        © {date.getFullYear()} &nbsp;
         <a href="https://www.linkedin.com/in/amyliao123/" target="_blank">
-          &nbsp; Amy Liao
+          Amy Liao
         </a>
       </div>
     </div>

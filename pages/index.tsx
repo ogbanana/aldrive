@@ -16,7 +16,7 @@ const index = () => {
         <meta property="og:title" content="Amy Liao" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://aldrive.vercel.app/" />
-        <meta property="og:image" content="../images/share.png" />
+        <meta property="og:image" content="../public/images/share.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300&display=swap"
