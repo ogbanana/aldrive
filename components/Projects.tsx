@@ -22,7 +22,7 @@ const Projects = () => {
       Object.keys(bounds).forEach((i) => {
         if (
           bounds[i].top <= scrollNum + windowHeight &&
-          bounds[i].bottom >= scrollNum + windowHeight / 3
+          bounds[i].bottom >= scrollNum + windowHeight / 4
         ) {
           document
             .getElementById(i)
