@@ -5,6 +5,7 @@ import WelcomeText from '../components/WelcomeText'
 import Introduction from '../components/Introduction'
 import Projects from '../components/Projects'
 import Footer from '../components/Footer'
+import TechSkills from '../components/TechSkills'
 
 const index = () => {
   return (
@@ -29,6 +30,7 @@ const index = () => {
           <WelcomeText />
           <Introduction />
           <Projects />
+          <TechSkills />
           <Footer />
         </div>
       </div>
