@@ -1,7 +1,7 @@
 import React from 'react'
 
 const TechSkills = () => {
-  return <>TechSkills go here.</>
+  return <>TechSkills coming...</>
 }
 
 export default TechSkills
