@@ -1,21 +1,18 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
+import { initGA, logPageView } from '../utils/analytics'
 
 class MyDocument extends Document {
+  componentDidMount() {
+    if (!window['GA_INITIALIZED']) {
+      initGA()
+      window['GA_INITIALIZED'] = true
+    }
+    logPageView()
+  }
   render() {
     return (
       <Html>
         <Head>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-              ga('create', 'G-1Q43L9C8WQ', 'auto');
-              ga('send', 'pageview');`,
-            }}
-          />
           <script
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
