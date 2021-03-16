@@ -4,7 +4,7 @@ import allTech from '../utils/tech.json'
 const TechSkills = () => {
   return (
     <div className="bg-black w-full flex flex-col items-center lg:pl-5 lg:pr-5 lg:pt-10 lg:pb-10">
-      <h1 className="text-xl lg:text-4xl pt-5 pb-15">Tech Stack</h1>
+      <h1 className="text-xl lg:text-4xl pt-5 pb-14">Tech Stack</h1>
       <div className="flex flex-wrap justify-around w-4/5 h-full">
         {allTech.map((tech, index) => {
           let key = tech + index.toString()
