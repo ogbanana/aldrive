@@ -6,6 +6,7 @@ import Introduction from '../components/Introduction'
 import Projects from '../components/Projects'
 import Footer from '../components/Footer'
 import TechSkills from '../components/TechSkills'
+import AnalyticsLayout from './AnalyticsLayout'
 
 const index = () => {
   return (
@@ -24,16 +25,18 @@ const index = () => {
           rel="stylesheet"
         />
       </Head>
-      <div className="bg-background bg-contain">
-        <div className="mainContainer">
-          <Nav />
-          <WelcomeText />
-          <Introduction />
-          <Projects />
-          <TechSkills />
-          <Footer />
+      <AnalyticsLayout>
+        <div className="bg-background bg-contain">
+          <div className="mainContainer">
+            <Nav />
+            <WelcomeText />
+            <Introduction />
+            <Projects />
+            <TechSkills />
+            <Footer />
+          </div>
         </div>
-      </div>
+      </AnalyticsLayout>
     </>
   )
 }

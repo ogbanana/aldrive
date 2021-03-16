@@ -2,13 +2,6 @@ import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { initGA, logPageView } from '../utils/analytics'
 
 class MyDocument extends Document {
-  componentDidMount() {
-    if (!window['GA_INITIALIZED']) {
-      initGA()
-      window['GA_INITIALIZED'] = true
-    }
-    logPageView()
-  }
   render() {
     return (
       <Html>
