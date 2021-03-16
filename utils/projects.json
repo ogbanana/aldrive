@@ -1,12 +1,12 @@
 [
   {
-    "projectName": "MealDotMatch",
-    "image": "../images/mealdotmatch.png",
-    "url": "http://www.mealdotmatch.com/",
-    "description": "Mealdotmatch was the final project that my team and I built during bootcamp. This application was build to help people save food while we practice technologies that we learned in class.",
-    "myContributions": "We all took turns working on the entire stack.",
-    "stack": "JS, GraphQL, Twillio, Express, React, React-Bootstrap, Heroku",
-    "code": "https://github.com/meal-dot-match/mealdotmatch"
+    "projectName": "Advertisements on AMC",
+    "image": "../images/amcAds.png",
+    "url": "https://www.amc.com/",
+    "description": "Implemented a single solution that allowed business teams to incorporate advertisements on all major AMC Network's websites in an ongoing basis. The websites were for the following channels: AMC, BBC America, WETV, SundanceTV, and IFC. The solution needed to be dynamic and iterable.",
+    "myContributions": "This project had a tight timeline. I was given the opportunity to lead, plan, and delegate the tasks. I worked with one other engineer. The project was delivered on time, with no major bugs. An iteration is in the works.",
+    "stack": "IP of AMC Networks",
+    "code": ""
   },
   {
     "projectName": "WonderStruckTV",
@@ -18,6 +18,15 @@
     "code": ""
   },
   {
+    "projectName": "MealDotMatch",
+    "image": "../images/mealdotmatch.png",
+    "url": "http://www.mealdotmatch.com/",
+    "description": "Mealdotmatch was the final project that my team and I built during bootcamp. This application was build to help people save food while we practice technologies that we learned in class.",
+    "myContributions": "We all took turns working on the entire stack.",
+    "stack": "JS, GraphQL, Twillio, Express, React, React-Bootstrap, Heroku",
+    "code": "https://github.com/meal-dot-match/mealdotmatch"
+  },
+  {
     "projectName": "BroadenMedia",
     "image": "../images/broadenmedia.png",
     "url": "https://broadenmedia.vercel.app/",
@@ -26,14 +35,5 @@
     "stack": "IP of Joshua Melo",
     "teamMate": "https://www.linkedin.com/in/joshuamelo1",
     "code": "https://github.com/mallockey/broadenmedia"
-  },
-  {
-    "projectName": "Advertisements on AMC",
-    "image": "../images/amcAds.png",
-    "url": "https://www.amc.com/",
-    "description": "Implemented a single solution that allowed business teams to incorporate advertisements on all major AMC Network's websites in an ongoing basis. The websites were for the following channels: AMC, BBC America, WETV, SundanceTV, and IFC. The solution needed to be dynamic and iterable.",
-    "myContributions": "This project had a tight timeline. I was given the opportunity to lead, plan, and delegate the tasks. I worked with one other engineer. The project was delivered on time, with no major bugs. An iteration is in the works.",
-    "stack": "IP of AMC Networks",
-    "code": "Private"
   }
 ]

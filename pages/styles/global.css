@@ -14,6 +14,13 @@
 .navItem {
   @apply pr-5 pl-5 pt-3 opacity-60 hover:opacity-100 transform hover:scale-125;
 }
+.navItem .toolTip {
+  @apply invisible bg-black text-white text-left text-sm absolute z-10 pt-2;
+}
+
+.navItem:hover .toolTip {
+  @apply visible;
+}
 
 h1,
 h2,
@@ -59,4 +66,8 @@ a {
   50% {
     @apply border-blue-300 border-opacity-30;
   }
+}
+
+.techLogos {
+  @apply max-h-12 lg:max-h-20;
 }
