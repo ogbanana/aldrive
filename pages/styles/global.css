@@ -70,5 +70,5 @@ a {
 }
 
 .techLogos {
-  @apply max-h-12 lg:max-h-20;
+  @apply max-h-12 lg:max-h-20 hover:opacity-50 transform hover:scale-110;
 }
