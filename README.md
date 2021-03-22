@@ -1,7 +1,6 @@
-# aldrive
+# [amyliao.dev](https://amyliao.dev) <br/>
 
-My Portfolio
+This is my portfolio. I built it with React, Nextjs, and TailwindCSS. <br/>
+On this site you will find a few of my projects and the technologies I have used. <br/>
 
-##
-
-My personal website. A few of my projects are listed.
+![Site](public/images/share.png)
