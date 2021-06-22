@@ -20,7 +20,12 @@ const Introduction = () => {
             Fullstack Academy Alumna
           </a>
         </li>
-        <li>Currently coding at AMC Networks</li>
+        <li>
+          Currently coding at{' '}
+          <a href="https://movableink.com/careers" target="_blank">
+            Movable Ink
+          </a>
+        </li>
       </ul>
     </div>
   )
