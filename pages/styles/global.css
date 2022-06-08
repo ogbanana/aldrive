@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 * {
-  color: rgb(203, 240, 243);
+  color: rgb(206, 252, 255);
   font-family: 'Spartan', sans-serif;
 }
 
 .mainContainer {
-  @apply flex flex-col h-screen w-full bg-no-repeat bg-black bg-opacity-70 relative top-0 overflow-scroll md:pl-20 md:pr-20;
+  @apply flex flex-col h-screen w-full md:bg-no-repeat bg-black bg-opacity-80 relative top-0 overflow-scroll md:pl-20 md:pr-20;
 }
 
 .navItem {

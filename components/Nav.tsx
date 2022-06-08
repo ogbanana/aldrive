@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import navItems from '../utils/navItems.json'
+
 const Nav: FC = () => {
   return (
     <>
