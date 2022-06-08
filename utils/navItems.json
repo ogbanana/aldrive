@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Github",
+    "href": "https://github.com/ogbanana",
+    "image": "../images/GitHub-Mark-Light-64px.png"
+  },
+  {
+    "title": "LinkedIn",
+    "href": "https://www.linkedin.com/in/amyliao123/",
+    "image": "../images/LinkedIn.png"
+  },
+  {
+    "title": "Resume",
+    "href": "https://docs.google.com/document/d/12q33sKB0zyBlETuO2YaXeI3qU73SuboXC9a3G-uBUwk/edit?usp=sharing",
+    "image": "../images/resume.png"
+  }
+]

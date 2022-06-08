@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-const Introduction = () => {
+const Introduction: FC = () => {
   return (
     <div className="pl-8 pb-12 lg:pl-12 lg:pt-5">
       <h1>

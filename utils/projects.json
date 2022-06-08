@@ -1,5 +1,14 @@
 [
   {
+    "projectName": "Movable Ink",
+    "image": "../images/movableink.png",
+    "url": "https://www.movableink.com/",
+    "description": "A marketing company that help clients produce more entising emails.",
+    "myContributions": "I used internal SDKs to help clients build custom views and templates in the Movable Ink platform. I worked with many different APIs with various securities protocols. I also built internal tools and chrome extensions that helped my team work faster.",
+    "stack": "IP of Movable Ink",
+    "code": ""
+  },
+  {
     "projectName": "Advertisements on AMC",
     "image": "../images/amcAds.png",
     "url": "https://www.amc.com/",
@@ -20,7 +29,7 @@
   {
     "projectName": "MealDotMatch",
     "image": "../images/mealdotmatch.png",
-    "url": "http://www.mealdotmatch.com/",
+    "url": "https://mealdotmatch.vercel.app/",
     "description": "Mealdotmatch was the final project that my team and I built during bootcamp. This application was build to help people save food while we practice technologies that we learned in class.",
     "myContributions": "We all took turns working on the entire stack.",
     "stack": "JS, GraphQL, Twillio, Express, React, React-Bootstrap, Heroku",

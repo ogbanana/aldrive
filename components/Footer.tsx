@@ -1,7 +1,6 @@
-import React from 'react'
-import Nav from './Nav'
+import React, { FC } from 'react'
 
-const Footer = () => {
+const Footer: FC = () => {
   const date = new Date()
   return (
     <div className="w-full relative text-lg pt-20 pb-32">

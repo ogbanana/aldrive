@@ -8,7 +8,7 @@
 }
 
 .mainContainer {
-  @apply flex flex-col h-screen w-full border-4 border-blue-300 border-opacity-20 rounded-xl border-b-0 bg-black bg-opacity-90 relative top-0 overflow-scroll;
+  @apply flex flex-col h-screen w-full bg-no-repeat bg-black bg-opacity-70 relative top-0 overflow-scroll md:pl-20 md:pr-20;
 }
 
 .navItem {
@@ -16,7 +16,7 @@
 }
 
 .navItem .toolTip {
-  @apply invisible bg-black text-white text-left text-sm absolute z-10 pt-2;
+  @apply invisible bg-black text-white text-left text-lg absolute z-10 pt-2;
 }
 
 .navItem:hover .toolTip {
@@ -30,7 +30,7 @@ h3 {
 }
 
 label {
-  @apply text-lg font-bold mt-4 mb-2;
+  @apply text-xl md:text-2xl font-extrabold mt-4 mb-2;
 }
 
 p {

@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { FC } from 'react'
 import allTech from '../utils/tech.json'
 
-const TechSkills = () => {
+const TechSkills: FC = () => {
   return (
     <div className="bg-black w-full flex flex-col items-center lg:pl-5 lg:pr-5 lg:pt-10 lg:pb-10">
       <h1 className="text-xl lg:text-4xl pt-5 pb-14">Tech Stack</h1>

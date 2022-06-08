@@ -1,22 +1,20 @@
-import React, { useState } from 'react'
-import Link from 'next/link'
-
-const Nav = () => {
+import React, { FC } from 'react'
+import navItems from '../utils/navItems.json'
+const Nav: FC = () => {
   return (
     <>
       <ul className="flex flex-row justify-center md:justify-end w-full h-14 text-2xl pt-5 lg:pr-10 mb-8">
-        <li className="navItem">
-          <a title="Github" href="https://github.com/ogbanana" target="_blank">
-            <img src="../images/GitHub-Mark-Light-64px.png" className="h-10" />
-            <div className="toolTip">Github</div>
-          </a>
-        </li>
-        <li className="navItem">
-          <a title="LinkedIn" href="https://www.linkedin.com/in/amyliao123/" target="_blank">
-            <img src="../images/LinkedIn.png" className="h-10" />
-            <div className="toolTip">LinkedIn</div>
-          </a>
-        </li>
+        {navItems &&
+          navItems.map((item, index) => {
+            return (
+              <li key={`item + ${index}`} className="navItem">
+                <a title={item.title} href={item.href} target="_blank">
+                  <img src={item.image} className="h-10" />
+                  <div className="toolTip">{item.title}</div>
+                </a>
+              </li>
+            )
+          })}
       </ul>
     </>
   )

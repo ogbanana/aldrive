@@ -26,7 +26,7 @@ const index = () => {
         />
       </Head>
       <AnalyticsLayout>
-        <div className="bg-background bg-contain">
+        <div className="bg-background bg-cover md:bg-no-repeat">
           <div className="mainContainer">
             <Nav />
             <WelcomeText />
