@@ -1,77 +1,77 @@
 [
   {
     "name": "javascript",
-    "path": "./techLogos/javascript.png",
+    "path": "/techLogos/javascript.png",
     "url": "https://www.javascript.com/"
   },
   {
     "name": "html",
-    "path": "./techLogos/html.png",
+    "path": "/techLogos/html.png",
     "url": "https://html.com/"
   },
   {
     "name": "css",
-    "path": "./techLogos/css.png",
+    "path": "/techLogos/css.png",
     "url": "https://css-tricks.com/"
   },
   {
     "name": "node",
-    "path": "./techLogos/node.png",
+    "path": "/techLogos/node.png",
     "url": "https://nodejs.org/en/"
   },
   {
     "name": "sass",
-    "path": "./techLogos/sass.png",
+    "path": "/techLogos/sass.png",
     "url": "https://sass-lang.com/"
   },
   {
     "name": "wordpress",
-    "path": "./techLogos/wordpress.png",
+    "path": "/techLogos/wordpress.png",
     "url": "https://wordpress.com/"
   },
   {
     "name": "redux",
-    "path": "./techLogos/redux.png",
+    "path": "/techLogos/redux.png",
     "url": "https://redux.js.org/"
   },
   {
     "name": "react",
-    "path": "./techLogos/react.png",
+    "path": "/techLogos/react.png",
     "url": "https://reactjs.org/"
   },
   {
     "name": "tailwindcss",
-    "path": "./techLogos/tailwindcss.png",
+    "path": "/techLogos/tailwindcss.png",
     "url": "https://tailwindcss.com/"
   },
   {
     "name": "nextjs",
-    "path": "./techLogos/nextjs.png",
+    "path": "/techLogos/nextjs.png",
     "url": "https://nextjs.org/"
   },
   {
     "name": "drupal",
-    "path": "./techLogos/drupal.png",
+    "path": "/techLogos/drupal.png",
     "url": "https://www.drupal.org/"
   },
   {
     "name": "firebase",
-    "path": "./techLogos/firebase.png",
+    "path": "/techLogos/firebase.png",
     "url": "https://firebase.google.com/"
   },
   {
     "name": "graphql",
-    "path": "./techLogos/graphql.png",
+    "path": "/techLogos/graphql.png",
     "url": "https://graphql.org/"
   },
   {
     "name": "postgresql",
-    "path": "./techLogos/postgresql.png",
+    "path": "/techLogos/postgresql.png",
     "url": "https://www.postgresql.org/"
   },
   {
     "name": "php",
-    "path": "./techLogos/php.png",
+    "path": "/techLogos/php.png",
     "url": "https://www.php.net/"
   }
 ]

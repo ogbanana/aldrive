@@ -4,7 +4,7 @@ import projects from '../utils/projects.json'
 const Projects: FC = () => {
   return (
     <>
-      <h2 className="flex w-full flex-col lg:flex-row items-center text-2xl lg:text-3xl pl-4 lg:pl-10 lg:pt-4 pb-8">
+      <h2 className="flex w-full flex-col lg:flex-row items-center text-2xl lg:text-3xl pl-4 lg:pl-10 lg:pt-4 mt-8">
         My Projects
       </h2>
       {projects.map((project, index) => {
@@ -14,9 +14,9 @@ const Projects: FC = () => {
             key={index}
             className="project md:grid grid-flow-row md:grid-cols-5 md:grid-rows-1 md:gap-4 p-5 md:opacity-100"
           >
-            <div className="bg-gray-900 flex flex-col p-5 lg:text-right justify-around rounded-xl col-start-1 col-end-3 lg:items-end mb-5">
+            <div className="bg-gray-900 flex flex-col p-5 lg:text-right justify-around rounded-xl col-start-1 col-end-3 lg:items-end mb-5 drop-shadow-3xl">
               <a href={project.url} target="_blank">
-                <h3 className="text-3xl border-b border-blue-200 hover:text-pink-400 lg:text-2xl mb-4 pt-2">
+                <h3 className="text-xl border-b border-blue-200 hover:text-pink-400 md:text-3xl mb-4 pt-2">
                   {project.projectName}
                 </h3>
               </a>
@@ -52,10 +52,8 @@ const Projects: FC = () => {
                 )}
               </span>
             </div>
-            <div className="flex justify-center items-center col-start-3 col-end-6 overflow-hidden rounded-xl border-2 border-blue-300 border-opacity-0 hover:border-opacity-70 mb-5">
-              <a href={project.url} target="_blank">
-                <img className="items-center hover:bg-opacity-100" src={project.image} />
-              </a>
+            <div className="flex justify-center items-center col-start-3 col-end-6 overflow-hidden rounded-xl drop-shadow-3xl mb-4 md:ml-8">
+              <img className="items-center hover:bg-opacity-100" src={project.image} />
             </div>
           </div>
         )

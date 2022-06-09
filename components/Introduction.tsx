@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 
 const Introduction: FC = () => {
   return (
-    <div className="pl-8 pb-12 lg:pl-12 lg:pt-5 bg-black bg-opacity-70">
+    <div className="pl-8 pb-12 lg:pl-12 lg:pt-5 bg-black bg-opacity-70 drop-shadow-3xl">
       <h1>
         <a href="https://www.linkedin.com/in/amyliao123/" target="_blank">
           Amy Liao
