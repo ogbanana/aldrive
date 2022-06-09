@@ -47,7 +47,7 @@ const Projects: FC = () => {
                   <p>Private</p>
                 ) : (
                   <a href={project.code} target="_blank">
-                    <img src="../images/octocat.png" className="h-10" />
+                    <img src="/images/octocat.png" className="h-10" />
                   </a>
                 )}
               </span>
