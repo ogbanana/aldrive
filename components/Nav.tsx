@@ -3,8 +3,8 @@ import navItems from '../utils/navItems.json'
 
 const Nav: FC = () => {
   return (
-    <>
-      <ul className="flex flex-row justify-center md:justify-end w-full h-14 text-2xl pt-5 lg:pr-10 mb-8">
+    <div className="w-full bg-black bg-opacity-75">
+      <ul className="flex flex-row justify-center md:justify-end w-full text-2xl md:pt-4 md:pb-4 md:pr-12">
         {navItems &&
           navItems.map((item, index) => {
             return (
@@ -17,7 +17,7 @@ const Nav: FC = () => {
             )
           })}
       </ul>
-    </>
+    </div>
   )
 }
 

@@ -47,13 +47,16 @@ const Projects: FC = () => {
                   <p>Private</p>
                 ) : (
                   <a href={project.code} target="_blank">
-                    <img src="/images/octocat.png" className="h-10" />
+                    <img src="../images/octocat.png" className="h-10" />
                   </a>
                 )}
               </span>
             </div>
-            <div className="flex justify-center items-center col-start-3 col-end-6 overflow-hidden rounded-xl drop-shadow-3xl mb-4 md:ml-4">
-              <img className="items-center hover:bg-opacity-100" src={project.image} />
+            <div className="flex justify-center items-center col-start-3 col-end-6 overflow-hidden rounded-xl drop-shadow-3xl mb-4 md:ml-4 md:w-auto md:h-auto">
+              <img
+                className="items-center w-auto h-full hover:bg-opacity-100"
+                src={project.image}
+              />
             </div>
           </div>
         )
