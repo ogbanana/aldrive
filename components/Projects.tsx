@@ -16,7 +16,7 @@ const Projects: FC = () => {
           >
             <div className="bg-gray-900 flex flex-col p-5 lg:text-right justify-around rounded-xl col-start-1 col-end-3 lg:items-end mb-5 drop-shadow-3xl">
               <a href={project.url} target="_blank">
-                <h3 className="text-xl border-b border-blue-200 hover:text-pink-400 md:text-3xl mb-4 pt-2">
+                <h3 className="text-xl border-b border-blue-200 hover:text-pink-400 md:text-2xl mb-4 pt-2">
                   {project.projectName}
                 </h3>
               </a>
@@ -52,7 +52,7 @@ const Projects: FC = () => {
                 )}
               </span>
             </div>
-            <div className="flex justify-center items-center col-start-3 col-end-6 overflow-hidden rounded-xl drop-shadow-3xl mb-4 md:ml-8">
+            <div className="flex justify-center items-center col-start-3 col-end-6 overflow-hidden rounded-xl drop-shadow-3xl mb-4 md:ml-4">
               <img className="items-center hover:bg-opacity-100" src={project.image} />
             </div>
           </div>

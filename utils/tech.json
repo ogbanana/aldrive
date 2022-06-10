@@ -5,6 +5,11 @@
     "url": "https://www.javascript.com/"
   },
   {
+    "name": "typescript",
+    "path": "/techLogos/typescript.png",
+    "url": "https://www.typescriptlang.org/"
+  },
+  {
     "name": "html",
     "path": "/techLogos/html.png",
     "url": "https://html.com/"
@@ -25,14 +30,19 @@
     "url": "https://sass-lang.com/"
   },
   {
+    "name": "nextjs",
+    "path": "/techLogos/nextjs.png",
+    "url": "https://nextjs.org/"
+  },
+  {
+    "name": "vercel",
+    "path": "/techLogos/vercel.png",
+    "url": "https://vercel.com/"
+  },
+  {
     "name": "wordpress",
     "path": "/techLogos/wordpress.png",
     "url": "https://wordpress.com/"
-  },
-  {
-    "name": "redux",
-    "path": "/techLogos/redux.png",
-    "url": "https://redux.js.org/"
   },
   {
     "name": "react",
@@ -43,11 +53,6 @@
     "name": "tailwindcss",
     "path": "/techLogos/tailwindcss.png",
     "url": "https://tailwindcss.com/"
-  },
-  {
-    "name": "nextjs",
-    "path": "/techLogos/nextjs.png",
-    "url": "https://nextjs.org/"
   },
   {
     "name": "drupal",
@@ -73,5 +78,10 @@
     "name": "php",
     "path": "/techLogos/php.png",
     "url": "https://www.php.net/"
+  },
+  {
+    "name": "redux",
+    "path": "/techLogos/redux.png",
+    "url": "https://redux.js.org/"
   }
 ]

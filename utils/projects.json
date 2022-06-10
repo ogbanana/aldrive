@@ -4,7 +4,7 @@
     "image": "/images/movableink.png",
     "url": "https://www.movableink.com/",
     "description": "A marketing company that help clients produce more entising emails.",
-    "myContributions": "I used internal SDKs to help clients build custom views and templates in the Movable Ink platform. I worked with many different APIs with various securities protocols. I also built internal tools and chrome extensions that helped my team work faster.",
+    "myContributions": "Migrated 200+ legacy Movable Ink apps to a new internal SDK. Build over 150 apps for various clients, using Movable Ink's intnernal SDK.",
     "stack": "IP of Movable Ink",
     "code": ""
   },
@@ -12,8 +12,8 @@
     "projectName": "Advertisements on AMC",
     "image": "/images/amc-ads.png",
     "url": "https://www.amc.com/",
-    "description": "Implemented a single solution that allowed business teams to incorporate advertisements on all major AMC Network's websites in an ongoing basis. The websites were for the following channels: AMC, BBC America, WETV, SundanceTV, and IFC. The solution needed to be dynamic and iterable.",
-    "myContributions": "This project had a tight timeline. I was given the opportunity to lead, plan, and delegate the tasks. I worked with one other engineer. The project was delivered on time, with no major bugs. An iteration is in the works.",
+    "description": "Implemented a solution that allowed business teams to incorporate advertisements on all major AMC Network's websites in an ongoing basis. The websites were for the following channels: AMC, BBC America, WETV, SundanceTV, and IFC.",
+    "myContributions": "Lead, plan, and delegate the tasks. The project was delivered on time, with no major bugs. An iteration is in the works.",
     "stack": "IP of AMC Networks",
     "code": ""
   },
@@ -30,9 +30,9 @@
     "projectName": "MealDotMatch",
     "image": "/images/mealdotmatch.png",
     "url": "https://mealdotmatch.vercel.app/",
-    "description": "Mealdotmatch was the final project that my team and I built during bootcamp. This application was build to help people save food while we practice technologies that we learned in class.",
-    "myContributions": "We all took turns working on the entire stack.",
-    "stack": "JS, GraphQL, Twillio, Express, React, React-Bootstrap, Heroku",
+    "description": "This is a rebuild of my capstone project at Fullstack Academy. It takes a few ingredients and matches you to recipes with those ingredients.",
+    "myContributions": "I partner with 1 other engineer to rebuild it with a more modern front-end stack.",
+    "stack": "TypeScript, Tailwindcss, Vercel, Twillio, React, ReactQuery",
     "code": "https://github.com/meal-dot-match/mealdotmatch"
   },
   {
