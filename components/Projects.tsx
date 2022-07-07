@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React, { FC } from 'react'
 import projects from '../utils/projects.json'
 
@@ -14,7 +15,7 @@ const Projects: FC = () => {
             key={index}
             className="project md:grid grid-flow-row md:grid-cols-5 md:grid-rows-1 md:gap-4 p-5 md:opacity-100"
           >
-            <div className="bg-gray-900 flex flex-col p-5 lg:text-right justify-around rounded-xl col-start-1 col-end-3 lg:items-end mb-5 drop-shadow-3xl">
+            <div className="max-w-4xl bg-gray-900 flex flex-col p-5 lg:text-right justify-around rounded-xl col-start-1 col-end-3 lg:items-end mb-5 drop-shadow-3xl">
               <a href={project.url} target="_blank">
                 <h3 className="text-xl border-b border-blue-200 hover:text-pink-400 md:text-2xl mb-4 pt-2">
                   {project.projectName}
@@ -47,15 +48,17 @@ const Projects: FC = () => {
                   <p>Private</p>
                 ) : (
                   <a href={project.code} target="_blank">
-                    <img src="../images/octocat.png" className="h-10" />
+                    <Image src="/images/octocat.png" className="h-10" width={50} height={70} />
                   </a>
                 )}
               </span>
             </div>
             <div className="flex justify-center items-center col-start-3 col-end-6 overflow-hidden rounded-xl drop-shadow-3xl mb-4 md:ml-4 md:w-auto md:h-auto">
-              <img
-                className="items-center w-auto h-full hover:bg-opacity-100"
+              <Image
+                className="items-center rounded-xl hover:bg-opacity-100"
                 src={project.image}
+                width={900}
+                height={600}
               />
             </div>
           </div>

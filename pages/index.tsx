@@ -10,7 +10,7 @@ import AnalyticsLayout from './AnalyticsLayout'
 
 const index = () => {
   return (
-    <>
+    <div className="max-w-full">
       <Head>
         <title>Amy Liao</title>
         <link rel="icon" type="images/png" href="/images/favicon.ico" />
@@ -37,7 +37,7 @@ const index = () => {
           </div>
         </div>
       </AnalyticsLayout>
-    </>
+    </div>
   )
 }
 
