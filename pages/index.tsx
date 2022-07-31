@@ -27,13 +27,15 @@ const index = () => {
       </Head>
       <AnalyticsLayout>
         <div className="bg-background bg-center md:bg-cover bg-no-repeat">
-          <div className="mainContainer">
-            <Nav />
-            <WelcomeText />
-            <Introduction />
-            <Projects />
-            <TechSkills />
-            <Footer />
+          <div className="bg-black bg-opacity-80 w-full flex justify-center">
+            <div className="mainContainer">
+              <Nav />
+              <WelcomeText />
+              <Introduction />
+              <Projects />
+              <TechSkills />
+              <Footer />
+            </div>
           </div>
         </div>
       </AnalyticsLayout>

@@ -8,7 +8,7 @@
 }
 
 .mainContainer {
-  @apply flex flex-col h-screen w-full md:bg-no-repeat bg-black bg-opacity-80 relative top-0 overflow-scroll;
+  @apply max-w-fit flex flex-col h-screen relative top-0 overflow-scroll;
 }
 
 .navItem {
